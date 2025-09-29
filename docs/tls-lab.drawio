@@ -1,0 +1,35 @@
+<mxfile host="65bd71144e">
+    <diagram name="TLS Lab" id="0">
+        <mxGraphModel dx="786" dy="827" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="Poste de l&#39;étudiant&lt;br/&gt;(navigateur)" style="shape=rectangle;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="40" width="160" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="CoreDNS (53)&lt;br/&gt;Zone locale" style="shape=rectangle;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="300" y="40" width="160" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="Résolveurs publics&lt;br/&gt;(fwd 1.1.1.1, 9.9.9.9)" style="shape=rectangle;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="560" y="40" width="200" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="Nginx (80/443)&lt;br/&gt;Site: site1.sio.home.arpa&lt;br/&gt;Certs dans /etc/nginx/certs" style="shape=rectangle;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="200" y="180" width="360" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="" style="endArrow=block;html=1;" parent="1" source="3" target="4" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="HTTP/HTTPS (80/443)" style="endArrow=block;html=1;" parent="1" source="2" target="5" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="TCP/UDP 53" style="endArrow=block;html=1;" parent="1" source="2" target="3" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="310" y="450" as="sourcePoint"/>
+                        <mxPoint x="310" y="530" as="targetPoint"/>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

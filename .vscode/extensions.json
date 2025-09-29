@@ -1,0 +1,11 @@
+{
+    "recommendations": [
+        "yzhang.markdown-all-in-one",
+        "davidanson.vscode-markdownlint",
+        "hediet.vscode-drawio",
+        "editorconfig.editorconfig",
+        "nepaul.editorconfiggenerator",
+        "ms-vscode-remote.remote-ssh",
+        "ms-vscode-remote.remote-ssh-edit"
+    ]
+}

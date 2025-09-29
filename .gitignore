@@ -1,0 +1,17 @@
+# Node / Python / IDE (au cas où)
+node_modules/
+venv/
+.venv/
+__pycache__/
+
+# Certificats / clés / artefacts OpenSSL
+pki/*.key
+pki/*.pfx
+pki/*.p12
+pki/*.srl
+pki/*-key.pem
+pki/*-key.key
+pki/*.req
+pki/*.csr
+
+notes.md

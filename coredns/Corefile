@@ -1,0 +1,13 @@
+sio.home.arpa:53 {
+    file /zones/sio.home.arpa.db sio.home.arpa
+    log
+    errors
+    cache 300
+}
+
+.:53 {
+    forward . 1.1.1.1 9.9.9.9
+    cache 300
+    log
+    errors
+}

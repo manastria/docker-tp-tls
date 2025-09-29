@@ -1,0 +1,39 @@
+{
+  // Configuration par défaut, on peut la désactiver si on veut tout spécifier
+  "default": true,
+
+  // MD049: Style pour l'italique (emphasis)
+  // "asterisk" pour *italic*, "underscore" pour _italic_
+  "MD049": { "style": "underscore" },
+
+  // MD050: Style pour le gras (strong)
+  // "asterisk" pour **bold**, "underscore" for __bold__
+  "MD050": { "style": "asterisk" },
+
+  // --- Autres règles utiles pour un README ---
+
+  // MD013: Longueur des lignes (désactivée ici, car souvent contraignante)
+  "MD013": false,
+
+  // MD024: Pas de titres dupliqués dans un même document
+  "MD024": { "allow_different_nesting": true },
+
+  // MD025: Un seul titre de niveau 1 (H1) par document
+  // Idéal pour que le titre du fichier soit le seul # Titre
+  "MD025": {
+    "level": 1,
+    "front_matter_title": "" // Ignore les titres dans le front-matter (pour Jekyll, etc.)
+  },
+
+  // Espaces après les marqueurs de liste (ex: "1. ")
+  "MD030": { "ol_multi": 1, "ol_single": 1 },
+
+  // Lignes vides autour des blocs de code fences
+  "MD031": true,
+
+  // Lignes vides autour des listes
+  "MD032": true,
+
+  // Style des blocs de code : privilégier les fences (```), pas l’indentation de 4 espaces
+  "MD046": { "style": "fenced" }
+}
